@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinematic Ganya | Director, Cinematographer & Digital Creator</title>
+  <meta name="description" content="Cinematic Ganya - Director of Photography, Filmmaker & Content Creator crafting high-impact commercials, travel documentaries, and viral visual experiences.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Remixicon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Site Header
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <i class="ri-movie-2-line"></i>
+        </div>
+        <div class="brand-text">GANYA<span>.CINEMA</span></div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="about.html" class="nav-link">About & Gear</a>
+        <a href="services.html" class="nav-link">Services & Pricing</a>
+        <a href="shop.html" class="nav-link">Digital Shop</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Theme, Cart, CTA, Mobile Toggle) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <i class="ri-moon-line"></i>
+        </button>
+
+        <!-- Cart Trigger -->
+        <a href="shop.html" class="btn-icon cart-btn" aria-label="Shopping Cart" title="View Cart">
+          <i class="ri-shopping-bag-3-line"></i>
+          <span class="cart-count" style="display: none;">0</span>
+        </a>
+
+        <!-- Booking CTA Button -->
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta-btn">
+          <span>Book Project</span>
+          <i class="ri-arrow-right-line"></i>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" aria-label="Open mobile navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="hero-glow-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <!-- Status indicator -->
+        <div class="creator-status-badge">
+          <span class="status-dot"></span>
+          <span>Available for Global Productions & Brand Collabs</span>
+        </div>
+
+        <h1 class="hero-title">
+          Crafting <span class="text-gradient">Cinematic Stories</span> That Captivate Millions
+        </h1>
+
+        <p class="hero-subtitle">
+          Director of Photography, Visual Storyteller & Digital Creator pushing the boundaries of commercial film, documentary expeditions, and cutting-edge color grading.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" onclick="openProjectModal('project-1')">
+            <i class="ri-play-fill"></i>
+            <span>Watch 2026 Showreel</span>
+          </button>
+          <a href="portfolio.html" class="btn btn-secondary btn-lg">
+            <i class="ri-grid-fill"></i>
+            <span>Explore Works</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Showreel Video Container -->
+      <div class="hero-reel-container" onclick="openProjectModal('project-1')">
+        <img src="https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1600&q=85" alt="Cinematic Showreel Preview" class="reel-thumbnail-bg">
+        <div class="reel-overlay">
+          <div class="reel-badge">
+            <i class="ri-film-fill"></i> 2026 DIRECTORS REEL • 4K DCI
+          </div>
+          <div class="play-pulse-btn">
+            <i class="ri-play-fill"></i>
+          </div>
+          <div class="reel-footer">
+            <div class="reel-info">
+              <h4>RED BULL | Beyond the Horizon</h4>
+              <p>Filmed on Sony FX6 & DJI Inspire 3 in the Swiss Alps</p>
+            </div>
+            <div class="reel-meta-specs">
+              <span class="spec-chip">4K RAW</span>
+              <span class="spec-chip">ANAMORPHIC</span>
+              <span class="spec-chip">DOLBY ATMOS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Stats Bar
+       ========================================================================== */
+  <section class="stats-bar-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number text-gradient">45M+</div>
+          <div class="stat-label">Organic Video Views</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient">250K+</div>
+          <div class="stat-label">Creative Community</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient">85+</div>
+          <div class="stat-label">Commercial Films Directed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient">14</div>
+          <div class="stat-label">Film Festival & Brand Awards</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Brand Partners Marquee
+       ========================================================================== -->
+  <section class="marquee-section">
+    <div class="container">
+      <div class="marquee-title">Trusted By Visionary Global Brands & Studios</div>
+    </div>
+    <div class="marquee-track">
+      <!-- Track Items (duplicated for continuous scrolling loop) -->
+      <div class="brand-pill"><i class="ri-camera-lens-fill"></i> Sony Imaging</div>
+      <div class="brand-pill"><i class="ri-flashlight-fill"></i> Red Bull Media House</div>
+      <div class="brand-pill"><i class="ri-compass-3-fill"></i> National Geographic</div>
+      <div class="brand-pill"><i class="ri-roadster-fill"></i> Porsche Motorsport</div>
+      <div class="brand-pill"><i class="ri-music-2-fill"></i> Republic Records</div>
+      <div class="brand-pill"><i class="ri-flight-takeoff-fill"></i> DJI Enterprise</div>
+      <div class="brand-pill"><i class="ri-pantone-fill"></i> Adobe Creative Cloud</div>
+      <div class="brand-pill"><i class="ri-cup-fill"></i> Blue Bottle Coffee</div>
+      <!-- Duplicate Set for smooth marquee -->
+      <div class="brand-pill"><i class="ri-camera-lens-fill"></i> Sony Imaging</div>
+      <div class="brand-pill"><i class="ri-flashlight-fill"></i> Red Bull Media House</div>
+      <div class="brand-pill"><i class="ri-compass-3-fill"></i> National Geographic</div>
+      <div class="brand-pill"><i class="ri-roadster-fill"></i> Porsche Motorsport</div>
+      <div class="brand-pill"><i class="ri-music-2-fill"></i> Republic Records</div>
+      <div class="brand-pill"><i class="ri-flight-takeoff-fill"></i> DJI Enterprise</div>
+      <div class="brand-pill"><i class="ri-pantone-fill"></i> Adobe Creative Cloud</div>
+      <div class="brand-pill"><i class="ri-cup-fill"></i> Blue Bottle Coffee</div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Featured Works Showcase
+       ========================================================================== -->
+  <section class="section" id="featured-works">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag"><i class="ri-video-line"></i> Selected Works</span>
+        <h2 class="section-title">Commercials, Docs & Visuals</h2>
+        <p class="section-desc">A curated selection of cinematic projects directed, shot, and color graded for international audiences.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Work Card 1 -->
+        <article class="work-card" onclick="openProjectModal('project-1')">
+          <div class="work-media-wrap">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=800&q=80" alt="Red Bull Commercial" class="work-thumbnail" loading="lazy">
+            <span class="work-category-badge">Commercial</span>
+            <span class="work-duration-badge"><i class="ri-time-line"></i> 02:45</span>
+            <div class="work-play-hover">
+              <div class="play-mini-btn"><i class="ri-play-fill"></i></div>
+            </div>
+          </div>
+          <div class="work-details">
+            <div>
+              <div class="work-client-tag">Red Bull Extreme Sports</div>
+              <h3 class="work-title">RED BULL | Beyond the Horizon</h3>
+              <p class="work-desc">High-octane wingsuit proximity flight film shot across the Swiss Alps in 4K RAW.</p>
+            </div>
+            <div class="work-meta-row">
+              <div class="work-stats"><i class="ri-eye-line"></i> 2.4M Views</div>
+              <div class="work-stats"><i class="ri-calendar-line"></i> 2026</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Work Card 2 -->
+        <article class="work-card" onclick="openProjectModal('project-2')">
+          <div class="work-media-wrap">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="Arctic Documentary" class="work-thumbnail" loading="lazy">
+            <span class="work-category-badge">Documentary</span>
+            <span class="work-duration-badge"><i class="ri-time-line"></i> 08:12</span>
+            <div class="work-play-hover">
+              <div class="play-mini-btn"><i class="ri-play-fill"></i></div>
+            </div>
+          </div>
+          <div class="work-details">
+            <div>
+              <div class="work-client-tag">National Geographic Wild</div>
+              <h3 class="work-title">Echoes of the Arctic</h3>
+              <p class="work-desc">Expedition documentary into Svalbard capturing the vanishing glaciers and resilient wildlife.</p>
+            </div>
+            <div class="work-meta-row">
+              <div class="work-stats"><i class="ri-eye-line"></i> 1.8M Views</div>
+              <div class="work-stats"><i class="ri-calendar-line"></i> 2026</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Work Card 3 -->
+        <article class="work-card" onclick="openProjectModal('project-3')">
+          <div class="work-media-wrap">
+            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Music Video" class="work-thumbnail" loading="lazy">
+            <span class="work-category-badge">Music Video</span>
+            <span class="work-duration-badge"><i class="ri-time-line"></i> 03:38</span>
+            <div class="work-play-hover">
+              <div class="play-mini-btn"><i class="ri-play-fill"></i></div>
+            </div>
+          </div>
+          <div class="work-details">
+            <div>
+              <div class="work-client-tag">Republic Records</div>
+              <h3 class="work-title">Midnight Neon: The Weeknd Visualizer</h3>
+              <p class="work-desc">Cyberpunk-inspired nocturnal music video set in Neo-Tokyo with practical neon reflections.</p>
+            </div>
+            <div class="work-meta-row">
+              <div class="work-stats"><i class="ri-eye-line"></i> 5.1M Views</div>
+              <div class="work-stats"><i class="ri-calendar-line"></i> 2025</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Work Card 4 -->
+        <article class="work-card" onclick="openProjectModal('project-4')">
+          <div class="work-media-wrap">
+            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80" alt="Sony Alpha Launch" class="work-thumbnail" loading="lazy">
+            <span class="work-category-badge">Commercial</span>
+            <span class="work-duration-badge"><i class="ri-time-line"></i> 01:50</span>
+            <div class="work-play-hover">
+              <div class="play-mini-btn"><i class="ri-play-fill"></i></div>
+            </div>
+          </div>
+          <div class="work-details">
+            <div>
+              <div class="work-client-tag">Sony Imaging Global</div>
+              <h3 class="work-title">SONY Alpha Launch: Light the Void</h3>
+              <p class="work-desc">Official launch campaign showcasing low-light capabilities in astrophotography & nightscapes.</p>
+            </div>
+            <div class="work-meta-row">
+              <div class="work-stats"><i class="ri-eye-line"></i> 3.6M Views</div>
+              <div class="work-stats"><i class="ri-calendar-line"></i> 2025</div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a href="portfolio.html" class="btn btn-secondary btn-lg">
+          <span>View Full Portfolio (8 Projects)</span>
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Services Overview
+       ========================================================================== -->
+  <section class="section" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag"><i class="ri-service-line"></i> Capabilities</span>
+        <h2 class="section-title">End-to-End Creative Production</h2>
+        <p class="section-desc">From initial script treatment to high-end filming, master color finishing, and viral distribution.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card highlighted">
+          <div class="service-icon-box"><i class="ri-movie-fill"></i></div>
+          <h3 class="service-title">Commercial Filmmaking</h3>
+          <p class="service-desc">Full-scale cinematic advertising films designed for broadcast, global web campaigns, and high-conversion product showcases.</p>
+          <ul class="service-deliverables">
+            <li><i class="ri-check-line"></i> 4K/8K Cinema RAW Multicam</li>
+            <li><i class="ri-check-line"></i> Anamorphic Prime Lenses & Gimbal Rigs</li>
+            <li><i class="ri-check-line"></i> Full Crew, Gaffers & Lighting Package</li>
+            <li><i class="ri-check-line"></i> 16:9, 9:16 & 1:1 Social Cutdowns</li>
+          </ul>
+          <div class="service-pricing">
+            <span class="price-prefix">Packages start at</span>
+            <span class="price-amount">$4,500</span>
+          </div>
+          <a href="services.html" class="btn btn-primary">Calculate & Customize</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="ri-palette-line"></i></div>
+          <h3 class="service-title">Color Grading & Post</h3>
+          <p class="service-desc">DaVinci Resolve Studio color finishing, print film emulation (Kodak 2383/Vision3), HDR delivery, and Dolby Atmos audio mastering.</p>
+          <ul class="service-deliverables">
+            <li><i class="ri-check-line"></i> ACES / Color Managed Workflows</li>
+            <li><i class="ri-check-line"></i> Custom Film Halation & Grain Sculpting</li>
+            <li><i class="ri-check-line"></i> High Dynamic Range (HDR10 / Dolby Vision)</li>
+            <li><i class="ri-check-line"></i> Comprehensive Stems & Delivery Formats</li>
+          </ul>
+          <div class="service-pricing">
+            <span class="price-prefix">Rates start at</span>
+            <span class="price-amount">$1,500</span>
+          </div>
+          <a href="services.html" class="btn btn-secondary">Learn More</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="ri-flight-takeoff-line"></i></div>
+          <h3 class="service-title">Creator Collabs & FPV Drones</h3>
+          <p class="service-desc">Integrated brand integrations, licensed travel docu-series, high-speed FPV drone aerial chase sequences, and UGC campaigns.</p>
+          <ul class="service-deliverables">
+            <li><i class="ri-check-line"></i> Dedicated YouTube Video Integrations</li>
+            <li><i class="ri-check-line"></i> Certified Commercial Drone Pilot (FAA/DGCA)</li>
+            <li><i class="ri-check-line"></i> High-Energy Viral Short Form (Reels/TikTok)</li>
+            <li><i class="ri-check-line"></i> Usage Rights & Raw B-Roll Licensing</li>
+          </ul>
+          <div class="service-pricing">
+            <span class="price-prefix">Collabs start at</span>
+            <span class="price-amount">$2,800</span>
+          </div>
+          <a href="services.html" class="btn btn-secondary">View Packages</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Creator Story / About Preview
+       ========================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="about-preview-grid">
+        <div class="about-visual-stack">
+          <div class="about-portrait-card">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85" alt="Ganesh V. - Cinematic Ganya" class="about-portrait-img">
+            <div class="creator-floating-badge">
+              <i class="ri-award-fill badge-icon"></i>
+              <div class="badge-text">
+                <h5>10+ Years Behind Lens</h5>
+                <p>Global Cinematographer & Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag"><i class="ri-user-smile-line"></i> Behind The Lens</span>
+          <h2 style="margin-bottom: 1.25rem;">Meet Ganesh (Cinematic Ganya)</h2>
+          <p class="about-bio-text">
+            I am a filmmaker, director of photography, and visual creator obsessed with the interplay between light, movement, and human emotion. Over the past decade, I've transformed raw ideas into captivating visual experiences viewed over 45 million times globally.
+          </p>
+          <p style="margin-bottom: 2rem;">
+            Whether piloting FPV drones through glacial crevices in Iceland or directing fast-paced car commercials for Porsche on the track, my focus remains constant: unfiltered cinematic excellence.
+          </p>
+
+          <div class="about-key-points">
+            <div class="key-point-item">
+              <div class="key-point-icon"><i class="ri-focus-3-line"></i></div>
+              <div class="key-point-text">
+                <h5>Cinema-Grade Optics</h5>
+                <p>Equipped with Sony FX6, RED 8K & Cooke Anamorphic glass.</p>
+              </div>
+            </div>
+            <div class="key-point-item">
+              <div class="key-point-icon"><i class="ri-global-line"></i></div>
+              <div class="key-point-text">
+                <h5>Global Experience</h5>
+                <p>Shot in 22 countries across 4 continents.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="about.html" class="btn btn-primary">Read Full Story & Gear Bag</a>
+            <a href="shop.html" class="btn btn-secondary">Get Creator LUTs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Client Testimonials
+       ========================================================================== -->
+  <section class="section" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag"><i class="ri-chat-voice-line"></i> Testimonials</span>
+        <h2 class="section-title">What Directors & Brands Say</h2>
+        <p class="section-desc">Uncompromising dedication to visual precision and client satisfaction.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="stars-rating">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+          <p class="testimonial-quote">
+            "Ganya brought an unbelievable visual language to our Alpine campaign. His ability to operate in sub-zero alpine conditions and deliver broadcast-master 4K footage was extraordinary."
+          </p>
+          <div class="client-author-info">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance" class="client-avatar">
+            <div>
+              <div class="client-name">Marcus Vance</div>
+              <div class="client-role">Creative Director, Red Bull Media House</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="stars-rating">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+          <p class="testimonial-quote">
+            "The color grading and sound design on our flagship camera launch video blew our leadership team away. Over 3.6 million views in the first week alone. A true visionary."
+          </p>
+          <div class="client-author-info">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" class="client-avatar">
+            <div>
+              <div class="client-name">Elena Rostova</div>
+              <div class="client-role">Global Marketing Head, Sony Imaging</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="stars-rating">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+          <p class="testimonial-quote">
+            "His LUTs and presets completely transformed our studio post-production workflow. Cinematic Ganya knows colors inside out. Highly recommend booking him for your next film."
+          </p>
+          <div class="client-author-info">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="David Sterling" class="client-avatar">
+            <div>
+              <div class="client-name">David Sterling</div>
+              <div class="client-role">Executive Producer, Republic Records</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Call to Action Banner
+       ========================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner-card">
+        <div class="cta-banner-content">
+          <span class="section-tag" style="background: rgba(255,87,34,0.15); border-color: var(--accent-primary);">Let's Collaborate</span>
+          <h2>Have a Vision in Mind? Let's Make It Cinematic.</h2>
+          <p>Now accepting commercial, documentary, and brand collaboration inquiries for Q1/Q2 2026. Custom rates, prompt delivery, and world-class production value.</p>
+          <div class="cta-buttons-wrap">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <i class="ri-send-plane-fill"></i>
+              <span>Start an Inquiry</span>
+            </a>
+            <a href="services.html#project-calculator" class="btn btn-secondary btn-lg">
+              <i class="ri-calculator-line"></i>
+              <span>Calculate Project Cost</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon"><i class="ri-movie-2-line"></i></div>
+            <div class="brand-text">GANYA<span>.CINEMA</span></div>
+          </a>
+          <p>
+            Cinematic Ganya is an award-winning creative production studio and creator channel dedicated to boundary-pushing cinematography, visual storytelling, and digital color science.
+          </p>
+          <div class="social-links">
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-pill" title="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-pill" title="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener" class="social-pill" title="X / Twitter"><i class="ri-twitter-x-line"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-pill" title="TikTok"><i class="ri-tiktok-fill"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-pill" title="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About & Gear Bag</a></li>
+            <li><a href="services.html">Services & Rates</a></li>
+            <li><a href="shop.html">Digital LUTs & Presets</a></li>
+            <li><a href="contact.html">Contact & Booking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Creator Assets</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Master LUT Pack Vol. 1</a></li>
+            <li><a href="shop.html">16mm Film Emulation</a></li>
+            <li><a href="shop.html">450+ Cinematic Sound FX</a></li>
+            <li><a href="shop.html">Tokyo Neon Presets</a></li>
+            <li><a href="services.html#project-calculator">Live Cost Estimator</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Studio Info</h5>
+          <ul class="footer-links">
+            <li><span style="color:var(--text-muted);"><i class="ri-map-pin-line"></i> Mumbai • Tokyo • Los Angeles</span></li>
+            <li><span style="color:var(--text-muted);"><i class="ri-mail-line"></i> ganya@cinematicganya.com</span></li>
+            <li><span style="color:var(--text-muted);"><i class="ri-time-line"></i> Response within 24 Hours</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span class="current-year">2026</span> Cinematic Ganya. All rights reserved.
+        </div>
+        <div class="footer-status-pill">
+          <span class="status-dot"></span>
+          <span>Studio Status: Booking Active</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Video Player Modal Component
+       ========================================================================== -->
+  <div class="modal-backdrop" id="video-modal">
+    <div class="video-modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal"><i class="ri-close-line"></i></button>
+
+      <!-- Simulated Custom Video Player -->
+      <div class="player-container">
+        <canvas id="video-simulation-canvas" class="video-canvas"></canvas>
+        <div class="player-big-center-play" id="big-center-play">
+          <i class="ri-play-fill"></i>
+        </div>
+
+        <!-- Controls Bar -->
+        <div class="player-controls-bar">
+          <div class="scrubber-track" id="player-scrubber-track">
+            <div class="scrubber-fill" id="player-scrubber-fill">
+              <div class="scrubber-thumb"></div>
+            </div>
+          </div>
+          <div class="controls-actions-row">
+            <div class="controls-left">
+              <button class="ctrl-btn" id="player-play-btn" title="Play/Pause">
+                <i class="ri-play-fill"></i>
+              </button>
+              <div class="volume-container">
+                <button class="ctrl-btn" id="player-mute-btn" title="Mute/Unmute">
+                  <i class="ri-volume-up-fill"></i>
+                </button>
+                <input type="range" class="volume-slider" min="0" max="100" value="85" title="Volume">
+              </div>
+              <div class="player-time-display">
+                <span id="modal-current-time">00:00</span> / <span id="modal-total-time">02:45</span>
+              </div>
+            </div>
+            <div class="controls-right">
+              <span class="spec-chip">4K DCI</span>
+              <button class="ctrl-btn" id="player-fullscreen-btn" title="Fullscreen">
+                <i class="ri-fullscreen-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Metadata in Modal -->
+      <div class="modal-video-meta">
+        <div class="meta-title-area">
+          <h3 id="modal-project-title">RED BULL | Beyond the Horizon</h3>
+          <p id="modal-project-desc">High-octane commercial film capturing extreme wingsuit proximity flights across the Swiss Alps.</p>
+        </div>
+        <div class="meta-badges-area">
+          <span class="spec-chip" id="modal-project-client">Client: Red Bull</span>
+          <span class="spec-chip" id="modal-project-role">Role: Director & DP</span>
+          <span class="spec-chip" id="modal-project-gear">Gear: Sony FX6 + Cooke Anamorphic</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

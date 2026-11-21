@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Live Project Estimator | Cinematic Ganya</title>
+  <meta name="description" content="Commercial filmmaking packages, color grading rates, and interactive live project cost calculator by Cinematic Ganya.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Remixicon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Site Header
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="ri-movie-2-line"></i></div>
+        <div class="brand-text">GANYA<span>.CINEMA</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="about.html" class="nav-link">About & Gear</a>
+        <a href="services.html" class="nav-link active">Services & Pricing</a>
+        <a href="shop.html" class="nav-link">Digital Shop</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <i class="ri-moon-line"></i>
+        </button>
+
+        <a href="shop.html" class="btn-icon cart-btn" aria-label="Shopping Cart" title="View Cart">
+          <i class="ri-shopping-bag-3-line"></i>
+          <span class="cart-count" style="display: none;">0</span>
+        </a>
+
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta-btn">
+          <span>Book Project</span>
+          <i class="ri-arrow-right-line"></i>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Open mobile navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Services Hero
+       ========================================================================== -->
+  <section class="section" style="padding-top: calc(var(--header-height) + 3rem);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag"><i class="ri-money-dollar-circle-line"></i> Transparent Pricing</span>
+        <h1 style="font-size: clamp(2.25rem, 4.5vw, 3.5rem); margin-bottom: 1.25rem;">
+          Production Services & <span class="text-gradient">Tiered Packages</span>
+        </h1>
+        <p class="section-desc">
+          High-end production tailored to your brand's ambitions. Use our interactive calculator below for instant live budgeting or choose a standard package.
+        </p>
+      </div>
+
+      <!-- Pricing Tier Cards -->
+      <div class="services-grid">
+        <!-- Tier 1 -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="ri-smartphone-line"></i></div>
+          <h3 class="service-title">Creator & Social Impact</h3>
+          <p class="service-desc">Designed for modern digital brands, D2C startups, and creator channels needing fast, high-impact vertical video.</p>
+          <ul class="service-deliverables">
+            <li><i class="ri-check-line"></i> 1 Full Shoot Day (Solo Cinema Rig)</li>
+            <li><i class="ri-check-line"></i> 5x High-Retention 9:16 Reels / Shorts</li>
+            <li><i class="ri-check-line"></i> Dynamic Subtitles & Sound Design</li>
+            <li><i class="ri-check-line"></i> 7-Day Turnaround Delivery</li>
+          </ul>
+          <div class="service-pricing">
+            <span class="price-prefix">Fixed package</span>
+            <span class="price-amount">$2,500</span>
+          </div>
+          <a href="contact.html" class="btn btn-secondary">Select Package</a>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="service-card highlighted">
+          <div class="service-icon-box"><i class="ri-movie-2-fill"></i></div>
+          <h3 class="service-title">Commercial Master Film</h3>
+          <p class="service-desc">Our most requested flagship commercial package. 4K/6K cinema multicam, licensed music, and broadcast color master.</p>
+          <ul class="service-deliverables">
+            <li><i class="ri-check-line"></i> 2 Full Shoot Days (Dual Multicam Crew)</li>
+            <li><i class="ri-check-line"></i> 1x Hero Commercial (60-90s) + 3x Social Cuts</li>
+            <li><i class="ri-check-line"></i> Anamorphic Prime Lenses & Gimbal Setup</li>
+            <li><i class="ri-check-line"></i> DaVinci Resolve Master Grade (HDR & Rec.709)</li>
+            <li><i class="ri-check-line"></i> Full Commercial Broadcast License</li>
+          </ul>
+          <div class="service-pricing">
+            <span class="price-prefix">Starting at</span>
+            <span class="price-amount">$5,500</span>
+          </div>
+          <a href="#project-calculator" class="btn btn-primary">Customize in Calculator</a>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="service-card">
+          <div class="service-icon-box"><i class="ri-earth-fill"></i></div>
+          <h3 class="service-title">Global Doc & Enterprise</h3>
+          <p class="service-desc">Complete expedition documentaries, international brand narratives, and multi-location product launch films.</p>
+          <ul class="service-deliverables">
+            <li><i class="ri-check-line"></i> Multi-Day International Production</li>
+            <li><i class="ri-check-line"></i> RED 8K Full-Format + FPV Drone Pilot</li>
+            <li><i class="ri-check-line"></i> Full Crew (Sound Mixer, Gaffer, 1st AC)</li>
+            <li><i class="ri-check-line"></i> Dolby Atmos Mix & Master Cinema Package</li>
+            <li><i class="ri-check-line"></i> Raw B-Roll Footage Archive Rights</li>
+          </ul>
+          <div class="service-pricing">
+            <span class="price-prefix">Custom quotes from</span>
+            <span class="price-amount">$12,000+</span>
+          </div>
+          <a href="contact.html" class="btn btn-secondary">Inquire for Treatment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Interactive Live Cost Estimator
+       ========================================================================== -->
+  <section class="section" id="project-calculator" style="background: var(--bg-surface-elevated);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag"><i class="ri-calculator-line"></i> Live Quote Engine</span>
+        <h2 class="section-title">Interactive Project Cost Estimator</h2>
+        <p class="section-desc">Select your desired specifications and watch the investment and timeline update in real time.</p>
+      </div>
+
+      <div class="calculator-wrapper">
+        <div class="calculator-grid">
+          <!-- Left: Options Controls -->
+          <div class="calc-controls-area">
+            
+            <!-- Step 1: Project Type -->
+            <div class="calc-step">
+              <div class="calc-step-title">
+                <span class="calc-step-number">1</span>
+                <span>Select Project Format</span>
+              </div>
+              <div class="calc-options-grid">
+                <div class="calc-option-card calc-type-card selected" data-type="commercial">
+                  <h5>Brand Commercial</h5>
+                  <p>Broadcast & Web Ad</p>
+                  <div class="option-price-tag">From $4,500</div>
+                </div>
+                <div class="calc-option-card calc-type-card" data-type="youtube">
+                  <h5>Creator Epic</h5>
+                  <p>YouTube / Featurette</p>
+                  <div class="option-price-tag">From $2,800</div>
+                </div>
+                <div class="calc-option-card calc-type-card" data-type="music">
+                  <h5>Music Video</h5>
+                  <p>Narrative / Visualizer</p>
+                  <div class="option-price-tag">From $3,800</div>
+                </div>
+                <div class="calc-option-card calc-type-card" data-type="social">
+                  <h5>Social Reel Pack</h5>
+                  <p>5x Vertical Videos</p>
+                  <div class="option-price-tag">From $1,900</div>
+                </div>
+                <div class="calc-option-card calc-type-card" data-type="documentary">
+                  <h5>Brand Documentary</h5>
+                  <p>Short Doc Expedition</p>
+                  <div class="option-price-tag">From $5,200</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Duration / Deliverables -->
+            <div class="calc-step">
+              <div class="calc-step-title">
+                <span class="calc-step-number">2</span>
+                <span>Deliverable Length / Runtime</span>
+              </div>
+              <div class="calc-options-grid">
+                <div class="calc-option-card calc-length-card selected" data-length="under60">
+                  <h5>Under 60 Seconds</h5>
+                  <p>High-energy punchy cut</p>
+                  <div class="option-price-tag">1.0x Base</div>
+                </div>
+                <div class="calc-option-card calc-length-card" data-length="short">
+                  <h5>1 to 3 Minutes</h5>
+                  <p>Standard Commercial</p>
+                  <div class="option-price-tag">1.25x Base</div>
+                </div>
+                <div class="calc-option-card calc-length-card" data-length="medium">
+                  <h5>3 to 7 Minutes</h5>
+                  <p>Narrative or Music Video</p>
+                  <div class="option-price-tag">1.6x Base</div>
+                </div>
+                <div class="calc-option-card calc-length-card" data-length="long">
+                  <h5>7 to 15+ Minutes</h5>
+                  <p>Docu-Story / Feature</p>
+                  <div class="option-price-tag">2.1x Base</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Camera & Crew Tier -->
+            <div class="calc-step">
+              <div class="calc-step-title">
+                <span class="calc-step-number">3</span>
+                <span>Camera Package & Crew Size</span>
+              </div>
+              <div class="calc-options-grid">
+                <div class="calc-option-card calc-crew-card selected" data-crew="solo">
+                  <h5>Solo Cinema Rig</h5>
+                  <p>Sony FX6 + Prime Lenses</p>
+                  <div class="option-price-tag">Included (+$0)</div>
+                </div>
+                <div class="calc-option-card calc-crew-card" data-crew="duo">
+                  <h5>Dual Multicam + Audio</h5>
+                  <p>2x FX6/FX3 + Sound Mixer</p>
+                  <div class="option-price-tag">+$1,200</div>
+                </div>
+                <div class="calc-option-card calc-crew-card" data-crew="full">
+                  <h5>RED / ARRI 8K + Crew</h5>
+                  <p>Full Crew, Gaffer, 1st AC</p>
+                  <div class="option-price-tag">+$3,200</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4: Add-ons Checkboxes -->
+            <div class="calc-step">
+              <div class="calc-step-title">
+                <span class="calc-step-number">4</span>
+                <span>Optional Production Add-ons</span>
+              </div>
+
+              <div class="calc-addon-item" data-addon="drone" data-cost="850">
+                <div class="addon-left">
+                  <div class="custom-checkbox"><i class="ri-check-line"></i></div>
+                  <div class="addon-info">
+                    <h6>4K High-Speed FPV Drone Pilot</h6>
+                    <span>Dynamic chasing, proximity dives, and outdoor aerials</span>
+                  </div>
+                </div>
+                <div class="addon-cost">+$850</div>
+              </div>
+
+              <div class="calc-addon-item" data-addon="grading" data-cost="650">
+                <div class="addon-left">
+                  <div class="custom-checkbox"><i class="ri-check-line"></i></div>
+                  <div class="addon-info">
+                    <h6>Master Color Grade & Dolby Atmos Mix</h6>
+                    <span>Print film emulation + custom foley sound design</span>
+                  </div>
+                </div>
+                <div class="addon-cost">+$650</div>
+              </div>
+
+              <div class="calc-addon-item" data-addon="rush" data-cost="1200">
+                <div class="addon-left">
+                  <div class="custom-checkbox"><i class="ri-check-line"></i></div>
+                  <div class="addon-info">
+                    <h6>Rush Turnaround (Priority 48-Hour Delivery)</h6>
+                    <span>Dedicated editorial team working around the clock</span>
+                  </div>
+                </div>
+                <div class="addon-cost">+$1,200</div>
+              </div>
+
+              <div class="calc-addon-item" data-addon="script" data-cost="750">
+                <div class="addon-left">
+                  <div class="custom-checkbox"><i class="ri-check-line"></i></div>
+                  <div class="addon-info">
+                    <h6>Scriptwriting & Storyboard Treatment</h6>
+                    <span>Creative direction, moodboards, and shooting script</span>
+                  </div>
+                </div>
+                <div class="addon-cost">+$750</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Sticky Live Summary & Booking Button -->
+          <div class="calc-summary-area">
+            <div class="calculator-summary-box">
+              <h3 class="summary-heading">Estimated Investment</h3>
+
+              <div class="summary-item-row">
+                <span class="summary-label">Format:</span>
+                <span class="summary-value" id="calc-summary-type">Brand Commercial Film</span>
+              </div>
+
+              <div class="summary-item-row">
+                <span class="summary-label">Runtime:</span>
+                <span class="summary-value" id="calc-summary-scope">Under 60 Seconds</span>
+              </div>
+
+              <div class="summary-item-row">
+                <span class="summary-label">Crew Tier:</span>
+                <span class="summary-value" id="calc-summary-crew">Solo Cinema Rig (Sony FX6)</span>
+              </div>
+
+              <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-subtle);">
+                <span class="summary-label" style="font-weight: 600;">Selected Add-ons:</span>
+                <div id="calc-summary-addons-list" style="margin-top: 0.35rem;">
+                  <span style="color: var(--text-subtle);">None selected</span>
+                </div>
+              </div>
+
+              <div class="summary-total-area">
+                <div class="total-label">Total Estimated Quote</div>
+                <div class="total-amount" id="calc-total-price">$4,500</div>
+                <div class="timeline-pill">
+                  <i class="ri-time-line"></i>
+                  <span id="calc-timeline-est">Estimated Delivery: ~21 business days</span>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-lg" id="calc-book-btn" style="width: 100%;">
+                <i class="ri-check-double-line"></i>
+                <span>Lock Quote & Inquire</span>
+              </button>
+              <p style="font-size: 0.775rem; color: var(--text-subtle); text-align: center; margin-top: 0.85rem;">
+                *Estimates reflect standard studio rates. Final proposal confirmed post discovery call.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Production Workflow Process
+       ========================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag"><i class="ri-flow-chart"></i> The Process</span>
+        <h2 class="section-title">How We Bring Your Story to Life</h2>
+        <p class="section-desc">A battle-tested 4-phase creative pipeline ensuring zero friction from idea to final render.</p>
+      </div>
+
+      <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+        <div class="service-card">
+          <div class="service-icon-box" style="font-size: 1.5rem; font-weight: 800;">01</div>
+          <h3 class="service-title">Pre-Production</h3>
+          <p class="service-desc">Treatment writing, visual moodboards, storyboard artist sketches, location scouting, talent casting, and detailed shot lists.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box" style="font-size: 1.5rem; font-weight: 800;">02</div>
+          <h3 class="service-title">Production</h3>
+          <p class="service-desc">Execution on set. Cinema-grade camera rigs, calibrated wireless monitoring, master gaffer lighting, and pristine audio recording.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box" style="font-size: 1.5rem; font-weight: 800;">03</div>
+          <h3 class="service-title">Post & Grading</h3>
+          <p class="service-desc">Assembly edit, rhythm cutting, DaVinci Resolve color finishing, organic film emulation, sound design, and custom score integration.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box" style="font-size: 1.5rem; font-weight: 800;">04</div>
+          <h3 class="service-title">Delivery & Launch</h3>
+          <p class="service-desc">Master ProRes 4444 XQ files, HDR master, clean textless versions, 9:16 vertical cuts for TikTok/Reels, and raw asset archiving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ Accordion
+       ========================================================================== -->
+  <section class="section" style="background: var(--bg-surface);">
+    <div class="container" style="max-width: 860px;">
+      <div class="section-title-wrap">
+        <span class="section-tag"><i class="ri-questionnaire-line"></i> Questions</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Everything you need to know about booking, rights, and delivery.</p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <details class="calc-addon-item" style="display: block; margin-bottom: 1rem; padding: 1.25rem; cursor: pointer;">
+          <summary style="font-weight: 600; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            <span>Do you travel for international shoots?</span>
+            <i class="ri-arrow-down-s-line" style="font-size: 1.4rem; color: var(--accent-primary);"></i>
+          </summary>
+          <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            Yes! Over 60% of our commercial and documentary projects are filmed internationally. We hold active travel visas, ATA Carnets for seamless international customs clearance of cinema gear, and drone pilot licenses.
+          </p>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="calc-addon-item" style="display: block; margin-bottom: 1rem; padding: 1.25rem; cursor: pointer;">
+          <summary style="font-weight: 600; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            <span>What are the commercial usage rights included?</span>
+            <i class="ri-arrow-down-s-line" style="font-size: 1.4rem; color: var(--accent-primary);"></i>
+          </summary>
+          <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            All commercial packages include perpetual, worldwide digital and web usage rights across website, YouTube, social channels, and digital ads. Broadcast TV / theatrical buyouts are available on request.
+          </p>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="calc-addon-item" style="display: block; margin-bottom: 1rem; padding: 1.25rem; cursor: pointer;">
+          <summary style="font-weight: 600; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            <span>How does payment and booking deposit work?</span>
+            <i class="ri-arrow-down-s-line" style="font-size: 1.4rem; color: var(--accent-primary);"></i>
+          </summary>
+          <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            We operate on a standard 50% deposit upon contract signing to lock in production dates on the studio calendar, with the remaining 50% due upon delivery of final approved watermarked masters.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon"><i class="ri-movie-2-line"></i></div>
+            <div class="brand-text">GANYA<span>.CINEMA</span></div>
+          </a>
+          <p>Cinematic Ganya is an award-winning creative production studio dedicated to boundary-pushing cinematography, visual storytelling, and digital color science.</p>
+          <div class="social-links">
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-pill"><i class="ri-youtube-fill"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-pill"><i class="ri-instagram-line"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener" class="social-pill"><i class="ri-twitter-x-line"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-pill"><i class="ri-tiktok-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About & Gear Bag</a></li>
+            <li><a href="services.html">Services & Rates</a></li>
+            <li><a href="shop.html">Digital LUTs & Presets</a></li>
+            <li><a href="contact.html">Contact & Booking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Creator Assets</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Master LUT Pack Vol. 1</a></li>
+            <li><a href="shop.html">16mm Film Emulation</a></li>
+            <li><a href="shop.html">450+ Cinematic Sound FX</a></li>
+            <li><a href="shop.html">Tokyo Neon Presets</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Studio Info</h5>
+          <ul class="footer-links">
+            <li><span style="color:var(--text-muted);"><i class="ri-map-pin-line"></i> Mumbai • Tokyo • Los Angeles</span></li>
+            <li><span style="color:var(--text-muted);"><i class="ri-mail-line"></i> ganya@cinematicganya.com</span></li>
+            <li><span style="color:var(--text-muted);"><i class="ri-time-line"></i> Response within 24 Hours</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span class="current-year">2026</span> Cinematic Ganya. All rights reserved.</div>
+        <div class="footer-status-pill">
+          <span class="status-dot"></span>
+          <span>Studio Status: Booking Active</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/calculator.js"></script>
+</body>
+</html>

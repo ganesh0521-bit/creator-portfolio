@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio & Film Works | Cinematic Ganya</title>
+  <meta name="description" content="Explore commercial films, documentaries, music videos, and travel cinematography by Cinematic Ganya.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Remixicon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Site Header
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><i class="ri-movie-2-line"></i></div>
+        <div class="brand-text">GANYA<span>.CINEMA</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="about.html" class="nav-link">About & Gear</a>
+        <a href="services.html" class="nav-link">Services & Pricing</a>
+        <a href="shop.html" class="nav-link">Digital Shop</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <i class="ri-moon-line"></i>
+        </button>
+
+        <a href="shop.html" class="btn-icon cart-btn" aria-label="Shopping Cart" title="View Cart">
+          <i class="ri-shopping-bag-3-line"></i>
+          <span class="cart-count" style="display: none;">0</span>
+        </a>
+
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta-btn">
+          <span>Book Project</span>
+          <i class="ri-arrow-right-line"></i>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Open mobile navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Portfolio Hero Header
+       ========================================================================== -->
+  <section class="section" style="padding-top: calc(var(--header-height) + 3rem); padding-bottom: 2rem;">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag"><i class="ri-film-line"></i> Project Archives</span>
+        <h1 style="font-size: clamp(2.25rem, 4.5vw, 3.5rem); margin-bottom: 1rem;">
+          Cinematic <span class="text-gradient">Portfolio & Films</span>
+        </h1>
+        <p class="section-desc">
+          Browse our complete catalog of commercial advertising, high-production documentaries, music videos, and viral digital shorts. Click any card to launch the 4K preview player.
+        </p>
+      </div>
+
+      <!-- Live Search & Category Filter Bar -->
+      <div style="max-width: 600px; margin: 0 auto 2.5rem auto; position: relative;">
+        <i class="ri-search-line" style="position: absolute; left: 18px; top: 50%; transform: translateY(-50%); color: var(--text-subtle); font-size: 1.25rem;"></i>
+        <input 
+          type="text" 
+          id="portfolio-search-input" 
+          class="form-control" 
+          placeholder="Search by client, title, camera gear, or location..."
+          style="padding-left: 3rem; padding-right: 1.5rem; height: 52px; border-radius: var(--radius-full); background: var(--bg-surface); border: 1px solid var(--border-active);"
+        >
+      </div>
+
+      <div class="shop-filter-bar">
+        <button class="filter-btn portfolio-filter-btn active" data-filter="all">All Projects (8)</button>
+        <button class="filter-btn portfolio-filter-btn" data-filter="commercial">Commercials</button>
+        <button class="filter-btn portfolio-filter-btn" data-filter="documentary">Documentaries</button>
+        <button class="filter-btn portfolio-filter-btn" data-filter="music">Music Videos</button>
+        <button class="filter-btn portfolio-filter-btn" data-filter="travel">Travel & Nature</button>
+        <button class="filter-btn portfolio-filter-btn" data-filter="shorts">Short Form & Reels</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Projects Grid
+       ========================================================================== -->
+  <section class="section" style="padding-top: 0; padding-bottom: 6rem;">
+    <div class="container">
+      <div class="portfolio-grid" id="portfolio-grid-container">
+        <!-- Rendered dynamically by js/portfolio.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Call to Action Banner
+       ========================================================================== -->
+  <section class="section" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="cta-banner-card">
+        <div class="cta-banner-content">
+          <span class="section-tag" style="background: rgba(255,87,34,0.15); border-color: var(--accent-primary);">Start A Production</span>
+          <h2>Have a Specific Commercial or Doc Project in Mind?</h2>
+          <p>Get a comprehensive itemized quote or book an initial creative treatment consultation with Ganesh today.</p>
+          <div class="cta-buttons-wrap">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <i class="ri-calendar-check-line"></i>
+              <span>Schedule Creative Call</span>
+            </a>
+            <a href="services.html#project-calculator" class="btn btn-secondary btn-lg">
+              <i class="ri-calculator-line"></i>
+              <span>Estimate Budget Online</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon"><i class="ri-movie-2-line"></i></div>
+            <div class="brand-text">GANYA<span>.CINEMA</span></div>
+          </a>
+          <p>Cinematic Ganya is an award-winning creative production studio dedicated to boundary-pushing cinematography, visual storytelling, and digital color science.</p>
+          <div class="social-links">
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-pill"><i class="ri-youtube-fill"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-pill"><i class="ri-instagram-line"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener" class="social-pill"><i class="ri-twitter-x-line"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-pill"><i class="ri-tiktok-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About & Gear Bag</a></li>
+            <li><a href="services.html">Services & Rates</a></li>
+            <li><a href="shop.html">Digital LUTs & Presets</a></li>
+            <li><a href="contact.html">Contact & Booking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Creator Assets</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">Master LUT Pack Vol. 1</a></li>
+            <li><a href="shop.html">16mm Film Emulation</a></li>
+            <li><a href="shop.html">450+ Cinematic Sound FX</a></li>
+            <li><a href="shop.html">Tokyo Neon Presets</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Studio Info</h5>
+          <ul class="footer-links">
+            <li><span style="color:var(--text-muted);"><i class="ri-map-pin-line"></i> Mumbai • Tokyo • Los Angeles</span></li>
+            <li><span style="color:var(--text-muted);"><i class="ri-mail-line"></i> ganya@cinematicganya.com</span></li>
+            <li><span style="color:var(--text-muted);"><i class="ri-time-line"></i> Response within 24 Hours</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span class="current-year">2026</span> Cinematic Ganya. All rights reserved.</div>
+        <div class="footer-status-pill">
+          <span class="status-dot"></span>
+          <span>Studio Status: Booking Active</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Video Player Modal Component
+       ========================================================================== -->
+  <div class="modal-backdrop" id="video-modal">
+    <div class="video-modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal"><i class="ri-close-line"></i></button>
+
+      <div class="player-container">
+        <canvas id="video-simulation-canvas" class="video-canvas"></canvas>
+        <div class="player-big-center-play" id="big-center-play">
+          <i class="ri-play-fill"></i>
+        </div>
+
+        <div class="player-controls-bar">
+          <div class="scrubber-track" id="player-scrubber-track">
+            <div class="scrubber-fill" id="player-scrubber-fill">
+              <div class="scrubber-thumb"></div>
+            </div>
+          </div>
+          <div class="controls-actions-row">
+            <div class="controls-left">
+              <button class="ctrl-btn" id="player-play-btn" title="Play/Pause">
+                <i class="ri-play-fill"></i>
+              </button>
+              <div class="volume-container">
+                <button class="ctrl-btn" id="player-mute-btn" title="Mute/Unmute">
+                  <i class="ri-volume-up-fill"></i>
+                </button>
+                <input type="range" class="volume-slider" min="0" max="100" value="85" title="Volume">
+              </div>
+              <div class="player-time-display">
+                <span id="modal-current-time">00:00</span> / <span id="modal-total-time">02:45</span>
+              </div>
+            </div>
+            <div class="controls-right">
+              <span class="spec-chip">4K DCI</span>
+              <button class="ctrl-btn" id="player-fullscreen-btn" title="Fullscreen">
+                <i class="ri-fullscreen-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-video-meta">
+        <div class="meta-title-area">
+          <h3 id="modal-project-title">Project Title</h3>
+          <p id="modal-project-desc">Project Description</p>
+        </div>
+        <div class="meta-badges-area">
+          <span class="spec-chip" id="modal-project-client">Client</span>
+          <span class="spec-chip" id="modal-project-role">Role</span>
+          <span class="spec-chip" id="modal-project-gear">Gear</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
